@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // 0 = yellow, 1 = red
+    // 0 = yinyang, 1 = fancing
 
     int activePlayer = 0;
 
@@ -40,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
             if (activePlayer == 0) {
 
-                counter.setImageResource(R.drawable.yellow);
+                counter.setImageResource(R.drawable.yinyang);
 
                 activePlayer = 1;
 
             } else {
 
-                counter.setImageResource(R.drawable.red);
+                counter.setImageResource(R.drawable.fancing);
 
                 activePlayer = 0;
 
@@ -64,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
                     gameIsActive = false;
 
-                    String winner = "Red";
+                    String winner = "Fancing";
 
                     if (gameState[winningPosition[0]] == 0) {
 
-                        winner = "Yellow";
+                        winner = "Yinyang";
 
                     }
 
